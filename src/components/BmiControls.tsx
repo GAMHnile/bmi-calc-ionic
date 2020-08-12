@@ -6,16 +6,16 @@ const BmiControls: React.FC<{
   onCalculate: () => void;
   onReset: () => void;
 }> = (props) => (
-  <IonRow>
-    <IonCol className="ion-text-left">
-      <IonButton onClick={props.onCalculate}>
+  <IonRow className="ion-margin-top">
+    <IonCol size="12" size-md="6" className="ion-text-center">
+      <IonButton color="secondary" expand="block" size="large" onClick={props.onCalculate}>
         <IonIcon slot="start" icon={calculatorOutline} />
         Calculate
       </IonButton>
     </IonCol>
 
-    <IonCol className="ion-text-right">
-      <IonButton onClick={props.onReset}>
+    <IonCol  size="12" size-md="6" className="ion-text-center">
+      <IonButton color="medium" fill="clear" onClick={props.onReset}>
         <IonIcon slot="start" icon={refreshOutline} />
         Reset
       </IonButton>
